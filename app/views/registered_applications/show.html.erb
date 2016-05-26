@@ -5,3 +5,9 @@
 
 <%= link_to 'Edit This Application', edit_registered_application_path %> |
 <%= link_to 'Back To Applications', registered_applications_path %>
+
+<br><br>
+
+<% @events.each do |k, v| %>
+	<div><%= k %> - <%= v.count %></div>
+<% end %>
