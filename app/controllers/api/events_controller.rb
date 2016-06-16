@@ -13,6 +13,13 @@ class API::EventsController < ApplicationController
     head 200
   end
   
+  def index
+    if request.method == "OPTIONS"
+     render :json => '', :content_type => 'application/json'
+     return
+    end
+  end
+   
   def create
     registered_application = RegisteredApplication.find_by(url: request.env['HTTP_ORIGIN'])
     if registered_application.nil?

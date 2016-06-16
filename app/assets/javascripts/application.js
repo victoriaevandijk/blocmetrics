@@ -16,3 +16,12 @@
 //= require turbolinks
 //= require bootstrap
 //= require_tree .
+
+var blocmetrics = {};
+blocmetrics.report = function(eventName){
+   var event = { name: eventName };
+   var request = new XMLHttpRequest();
+   request.open("POST", "https://bloc-foundation-torievandijk.c9users.io/api/events", true);
+   request.setRequestHeader('Content-Type', 'application/json');
+   request.send(JSON.stringify(event));
+  };
