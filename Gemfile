@@ -21,7 +21,8 @@
  gem 'pry'
  gem 'bootstrap-sass'
  gem 'devise'
- gem 'faker'
+ gem 'chartkick'
+ gem 'groupdate'
 
 
  group :development, :test do
