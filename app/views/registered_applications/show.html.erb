@@ -6,7 +6,6 @@
 </div>
 
 <%= pie_chart @registered_application.events.group(:name).count %>
-<%= line_chart @registered_application.events.group_by_day(:created_at).count %>
 
 <%= link_to 'Edit This Application', edit_registered_application_path %> |
 <%= link_to 'Back To Applications', registered_applications_path %>

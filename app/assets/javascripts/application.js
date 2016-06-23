@@ -17,7 +17,6 @@
 //= require bootstrap
 //= require_tree .
 //= require_self
-//= require jsapi
 //= require chartkick
 
 var blocmetrics = {};
