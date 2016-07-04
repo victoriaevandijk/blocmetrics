@@ -1,6 +1,6 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
-
+@import url("https://fonts.googleapis.com/css?family=Lato:300,400,700");
 
 @import "welcome";
 
@@ -10,8 +10,6 @@
   text-align: right;
   margin-right: 10px;
 }
-
-@import url("https://fonts.googleapis.com/css?family=Lato:300,400,700");
 
 html {
   font-family: sans-serif;
