@@ -27,3 +27,13 @@ blocmetrics.report = function(eventName){
    request.setRequestHeader('Content-Type', 'application/json');
    request.send(JSON.stringify(event));
   };
+  
+ function ready() {
+            $("#menu-toggle").click(function(e) {
+                e.preventDefault();
+                $("#wrapper").toggleClass("toggled");
+            });
+      };
+      
+$(document).ready(ready);
+$(document).on('page:load', ready);
